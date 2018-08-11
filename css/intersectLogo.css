@@ -1,0 +1,104 @@
+/* logo animation */
+svg#logo {}
+.header-loading svg#logo { opacity:0; }
+.header-loading svg#logo g, 
+.header-loading svg#logo path { transition:none !important; }
+
+.header-anim svg#logo { }
+svg#logo g, 
+svg#logo path { transform-origin: 270px 82px; }
+
+.header-anim path#dot-rt1 { animation: anim-dot-rt1 1.1s cubic-bezier(0.35,0,0.55,1); }
+.header-anim path#dot-rt2 { animation: anim-dot-rt2 1.2s cubic-bezier(0.35,0,0.55,1); }
+.header-anim path#dot-lt1 { animation: anim-dot-lt1 1.1s cubic-bezier(0.35,0,0.55,1); }
+.header-anim path#dot-lt2 { animation: anim-dot-lt2 1.2s cubic-bezier(0.35,0,0.55,1); }
+.header-anim path#dot-top1 { animation: anim-dot-top1 1.1s cubic-bezier(0.35,0,0.55,1); }
+.header-anim path#dot-top2 { animation: anim-dot-top2 1.2s cubic-bezier(0.35,0,0.55,1); }
+.header-anim path#dot-btm1 { animation: anim-dot-btm1 1.1s cubic-bezier(0.35,0,0.55,1); }
+.header-anim path#dot-btm2 { animation: anim-dot-btm2 1.2s cubic-bezier(0.35,0,0.55,1); }
+.header-anim path#dot-mid  { animation: anim-dot-mid 1s cubic-bezier(0.35,0,0.55,1); }
+
+
+.header-anim .logo-letter { opacity:0; }
+.header-anim #logo-letter-i { animation: anim-logo-letter forwards 0.15s 0.1s cubic-bezier(0.7,0,0.9,1); }
+.header-anim #logo-letter-n { animation: anim-logo-letter forwards 0.15s 0.133s cubic-bezier(0.7,0,0.9,1); }
+.header-anim #logo-letter-t { animation: anim-logo-letter forwards 0.15s 0.166s cubic-bezier(0.7,0,0.9,1); }
+.header-anim #logo-letter-e { animation: anim-logo-letter forwards 0.15s 0.2s cubic-bezier(0.7,0,0.9,1); }
+.header-anim #logo-letter-r { animation: anim-logo-letter forwards 0.15s 0.233s cubic-bezier(0.7,0,0.9,1); }
+.header-anim #logo-letter-s { animation: anim-logo-letter forwards 0.15s 0.266s cubic-bezier(0.7,0,0.9,1); }
+.header-anim #logo-letter-e2 { animation: anim-logo-letter forwards 0.15s 0.3s cubic-bezier(0.7,0,0.9,1); }
+.header-anim #logo-letter-c { animation: anim-logo-letter forwards 0.15s 0.333s cubic-bezier(0.7,0,0.9,1); }
+.header-anim #logo-letter-t2 { animation: anim-logo-letter forwards 0.15s 0.366s cubic-bezier(0.7,0,0.9,1); }
+
+
+.header-anim g#lettersright { animation: anim-lettersright 1.1s cubic-bezier(.35,.01,.28,1); }
+.header-anim g#lettersleft { animation: anim-lettersleft 1.1s cubic-bezier(.35,.01,.28,1); }
+@keyframes anim-lettersleft { 
+	0% { transform:translate(25px,0); }
+	60% { transform:translate(25px,0); }
+	100% { transform:none; }
+}
+@keyframes anim-lettersright { 
+	0% {  transform:translate(-25px,0); }
+	60% {  transform:translate(-25px,0); }
+	100% {  transform:none; }
+}
+
+@keyframes anim-logo-letter {
+	0% { opacity:0; }
+	100% { opacity:1; } 
+}
+
+@keyframes anim-dot-rt1 {
+	0% { transform:scale(0.5) translate(-52px,-1px); opacity:0; }
+	70% { transform:scale(0.5) translate(-52px,-1px); opacity:0; }
+	90% { opacity:1; } 100% { transform:none; }
+}
+@keyframes anim-dot-rt2 {
+	0% {  transform:scale(0.5) translate(-112px,0); opacity:0;  }
+	70% {  transform:scale(0.5) translate(-112px,0); opacity:0;  }
+	90% { opacity:1; } 100% { transform:none; }
+}
+
+@keyframes anim-dot-lt1 {
+	0% {   transform:scale(0.5) translate(41px,-4px); opacity:0; }
+	70% {   transform:scale(0.5) translate(41px,-4px); opacity:0; }
+	90% { opacity:1; } 100% { transform:none; }
+}
+
+@keyframes anim-dot-lt2 {
+	0% {  transform:scale(0.5) translate(75px,-6px);opacity:0;}
+	70% {  transform:scale(0.5) translate(75px,-6px);opacity:0;}
+	90% { opacity:1; } 100% { transform:none; }
+}
+
+@keyframes anim-dot-top1 {
+	0% {   transform:scale(0.5) translate(-9px,25px); opacity:0; }
+	70% {   transform:scale(0.5) translate(-9px,25px); opacity:0; }
+	90% { opacity:1; } 100% { transform:none; }
+}
+
+@keyframes anim-dot-top2 {
+	0% {  transform:scale(0.5) translate(-15px,49px);opacity:0;}
+	70% {  transform:scale(0.5) translate(-15px,49px);opacity:0;}
+	90% { opacity:1; } 100% { transform:none; }
+}
+
+@keyframes anim-dot-btm1 {
+	0% {   transform:scale(0.5) translate(12px,-40px); opacity:0; }
+	70% {   transform:scale(0.5) translate(12px,-40px); opacity:0; }
+	90% { opacity:1; } 100% { transform:none; }
+}
+
+@keyframes anim-dot-btm2 {
+	0% {   transform:scale(0.5) translate(25px,-82px);opacity:0; }
+	70% {   transform:scale(0.5) translate(25px,-82px);opacity:0; }
+	90% { opacity:1; } 100% { transform:none; }
+}
+
+@keyframes anim-dot-mid {
+	0% { transform:scale(0.3);opacity:0; }
+	50% { transform:scale(0.3); opacity:0; }
+	75% { transform:scale(1.5); opacity:1; }
+	100% { transform:none; }
+}
