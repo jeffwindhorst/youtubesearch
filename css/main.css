@@ -1750,6 +1750,13 @@ input::-moz-focus-inner {
 /* ------------------------------------------------------------------- 
  * ## home sidelinks
  * ------------------------------------------------------------------- */
+#player-content {
+    width: 620px;
+}
+#nfo {
+    list-style: none;
+    width: 620px;
+}
 .home-sidelinks {
     list-style: none !important;
     width: 510px;
