@@ -402,7 +402,10 @@ dd {
  * ------------------------------------------------------------------- */
 .video-container {
     position: relative;
-    padding-bottom: 56.25%;
+    top: 41%;
+    border: 1px solid red;
+    padding-bottom: 56%; 
+    margin-top: 40%;
     height: 0;
     overflow: hidden;
 }
