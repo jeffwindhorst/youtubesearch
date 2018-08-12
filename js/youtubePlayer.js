@@ -60,7 +60,7 @@ $(document).ready(function(){
         }, 
         
         updatePlayer: function(vId) {
-            iFrame="<iframe width='560' height='315' src='https://www.youtube.com/embed/'"+vid+"'?rel=0' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>";
+            iFrame="<iframe width='560' height='315' src='https://www.youtube.com/embed/"+vId+"'?rel=0' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>";
             $('#player-content').append(iFrame);
         }
     };

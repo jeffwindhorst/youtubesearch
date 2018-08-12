@@ -1,155 +1,79 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-<head>
+    <head>
 
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>Intersect Digital</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <meta charset="utf-8">
+        <title>Intersect Digital</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/vendor.css">
+        <link rel="stylesheet" href="css/main.css">
 
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
+        <script src="js/modernizr.js"></script>
+        <script src="js/pace.min.js"></script>
 
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
 
-    <!-- favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <body id="top">
+        <header class="s-header">
 
-</head>
+            <div class="header-logo">
+                <a class="site-logo" href="index.html">
+                    <img src="images/logo_pop_v2_optimized.gif" alt="Intercept Digital logo">
+                </a>            
+            </div> <!-- end header-logo -->
 
-<body id="top">
-
-    <!-- header
-    ================================================== -->
-    <header class="s-header">
-
-        <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <img src="images/logo_pop_v2_optimized.gif">
-            </a>
-            
-            
-            
-
-            
-        </div> <!-- end header-logo -->
-
-        <nav class="header-nav">
-
+            <nav class="header-nav">    
             <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+                <div class="header-nav__content">
+                    
+                    <ul class="header-nav home-sidelinks"></ul>
 
-            <div class="header-nav__content">
-                <h3>Transcend Studio</h3>
-                
-                <ul class="header-nav">
-                    <li class="current"><a class="smoothscroll"  id="#vuejs" title="vuejs">Vue.js</a></li>
-                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
-                    <li><a class="smoothscroll"  href="#services" title="services">Services</a></li>
-                    <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
-                    <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
-                </ul>
-    
-                <p>Perspiciatis hic praesentium nesciunt. Et neque a dolorum <a href='#0'>voluptatem</a> porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.</p>
-    
-                <ul class="header-nav__social">
-                    <li>
-                        <a href="#0"><i class="fab fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-behance"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-dribbble"></i></a>
-                    </li>
-                </ul>
+                </div> <!-- end header-nav__content -->
 
-            </div> <!-- end header-nav__content -->
+            </nav> <!-- end header-nav -->
 
-        </nav> <!-- end header-nav -->
-
-        <a class="header-menu-toggle" href="#0">
-            <span class="header-menu-icon"></span>
-        </a>
-
-    </header> <!-- end s-header -->
+            <a class="header-menu-toggle" href="#0">
+                <span class="header-menu-icon"></span>
+            </a>
 
 
-    <!-- home
-    ================================================== -->
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=top>
+        </header> <!-- end s-header -->
 
-        <div class="shadow-overlay"></div>
+        <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=top>
+            <div class="shadow-overlay"></div>
+            <div class="home-content">
+                <div class="row home-content__main">
+                    
+                    <section id="video" class="video-container">
+                        <h1>Hello Intersect Digital.</h1>
+                        <ul id="nfo">
+                            <li id="video-title"></li>
+                            <li id="video-description"></li>
+                        </ul>
+                        <pre id="player-content"><strong>No video selected.</strong></pre>
+                    </section>  
+                </div>
+            </div>
+            <!--
+            <ul class="home-sidelinks"></ul>
+            -->
+        </section>
 
-        <div class="home-content">
-
-            <div class="row home-content__main">
-                <h1>
-                Hello Intersect Digital.
-                </h1>
-
-                <section id="video">
-                    <ul id="nfo">
-                        <li id="video-thumb"><img src=""></li>
-                        <li id="video-title"></li>
-                        <li id="video-description"></li>
-                    </ul>
-                    <pre id="player-content"></pre>
-                </section>
-                
-                
-                
-            </div> <!-- end home-content__main -->
-
-        </div> <!-- end home-content -->
-
-        <ul class="home-sidelinks"></ul> 
-
-        <a href="#about" class="home-scroll smoothscroll">
-            <span class="home-scroll__text">Scroll Down</span>
-            <span class="home-scroll__icon"></span>
-        </a> <!-- end home-scroll -->
-
-    </section> <!-- end s-home -->
-
-
-
-
-
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader">            
+        <div id="preloader">
+            <div id="loader"></div>
         </div>
-    </div>
 
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/youtubePlayer.js"></script>
 
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/youtubePlayer.js"></script>
-
-</body>
+    </body>
 
 </html>
